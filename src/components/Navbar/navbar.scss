@@ -3,11 +3,11 @@
     background-color: white;
     color: $mainColor;
     width:100%;
-    height:70px;
+    height:80px;
     position:fixed;
     top:0;
     z-index: 2;
-    
+
     .wrapper{
         padding: 10px 30px;
         display: flex;
@@ -32,17 +32,24 @@
                 .icon {
                     font-size: 30px;
                     margin-right: 5px;
-                    .liIcon {
-                        color:#0077B5;
-                    }
                 }
-
-                span {
-                    font-size:15px;
-                    font-weight:400;
+                .liIcon {
+                    color:#0077B5;
+                    font-size: 30px;
                 }
 
             }
         }
+
+        .right {
+            display: flex;
+            .menuButton {
+                .icon {
+                    font-size: 30px;
+                }
+            }
+           
+        }
     }
+
 }
