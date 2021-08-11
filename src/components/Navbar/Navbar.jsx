@@ -6,6 +6,7 @@ import IconButton from '@material-ui/core/IconButton';
 import Popover from '@material-ui/core/Popover';
 import Typography from '@material-ui/core/Typography';
 import {makeStyles} from "@material-ui/core/styles";
+import {Menu, MenuItem, Link} from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
     popover:{
@@ -20,6 +21,7 @@ export default function Navbar() {
     const classes = useStyles();
     const [anchorEl, setAnchorEl] = React.useState(null);
     const [openPopoverId, setOpenPopoverId] = React.useState(null);
+    const [menuOpen, setMenuOpen] = React.useState(false);
     const handlePopoverOpen = (event, pId) => {
         setAnchorEl(event.target);
         setOpenPopoverId(pId);
@@ -30,12 +32,21 @@ export default function Navbar() {
         setOpenPopoverId(null);
     };
     
+    const handleMenuClick = (event) => {
+        setMenuOpen(!menuOpen);
+        setAnchorEl(event.target);
+    }
+
+    const handleMenuClose = () => {
+        setAnchorEl(null);
+        setMenuOpen(false);
+    }
 
     return (
         <div className="navbar">
             <div className="wrapper">
                 <div className="left">
-                    <a href="#about" className="logo">me</a>
+                    <a href="#about" className="logo">Nathan Pham</a>
                     <div className="itemContainer">
                         <Phone 
                             className="icon"
@@ -100,7 +111,42 @@ export default function Navbar() {
                 </div>
                 
                 <div className="right">
-                    <IconButton className="menuButton">
+                    <IconButton 
+                        className="menuButton"
+                        onClick={handleMenuClick}
+                    >
+                        <Menu
+                            id="hamNavMenu"
+                            anchorEl={anchorEl}
+                            open={menuOpen}
+                            keepMounted
+                            onClose = {handleMenuClose}
+                        >
+                            <MenuItem
+                                component={Link}
+                                href="#about"
+                            > 
+                                About
+                            </MenuItem>
+                            <MenuItem
+                                component={Link}
+                                href="#projects"
+                            > 
+                                Projects
+                            </MenuItem>
+                            <MenuItem
+                                component={Link}
+                                href="#testimonials"
+                            > 
+                                Testimonials
+                            </MenuItem>
+                            <MenuItem
+                                component={Link}
+                                href="#contact"
+                            > 
+                                Contact
+                            </MenuItem>
+                        </Menu>
                         <MenuIcon className="icon"/>
                     </IconButton>
                 </div>
