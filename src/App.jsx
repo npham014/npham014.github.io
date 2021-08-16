@@ -12,7 +12,6 @@ function App() {
         <About id="about"/>
         <Projects id="projects"/>
         <Testimonials id="testimonials"/>
-        <Contact id="contact"/>
       </div>
     </div>
   );

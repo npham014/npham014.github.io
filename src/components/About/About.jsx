@@ -11,7 +11,7 @@ export default function About() {
             showCursor:true,
             backDelay: 700,
             backSpeed: 50,
-            strings:["Software Engineer", "Full-Stack Developer"],
+            strings:["Software Engineer", "Full-Stack Developer", "Senior Intern"],
         });
     },[]);
     

@@ -138,7 +138,7 @@ export default function Navbar() {
                                 component={Link}
                                 href="#testimonials"
                             > 
-                                Testimonials
+                                Recommendations
                             </MenuItem>
                             <MenuItem
                                 component={Link}
