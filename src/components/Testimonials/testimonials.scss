@@ -10,6 +10,9 @@
     h1 {
         font-size: 50px;
         overflow: hidden;
+        @include mobile {
+            font-size: 20px;
+        }
     }
 
     .container {
@@ -18,6 +21,9 @@
         display: flex;
         align-items: center;
         justify-content: space-evenly;
+        @include mobile {
+            flex-direction: column;
+        }
 
         .card {
             width:300px;
@@ -28,11 +34,22 @@
             flex-direction: column;
             justify-content: space-around;
             padding: 20px;
+            @include mobile {
+                height: 180px;
+                margin: 10px 0px;
+                width: 250px;
+            }
 
             .top {
                 padding: 10px;
                 background-color: rgb(223, 222, 222);
                 border-radius: 20px;
+                text-align: center;
+                @include mobile {
+                    font-size: 15px;
+                    padding: 5px;
+                    height: 65%;
+                }
             }
 
             .bottom {
@@ -41,14 +58,23 @@
                 flex-direction: column;
                 justify-content: center;
                 margin-top: auto;
+                @include mobile {
+                    font-size:14px;
+                }
                 h3 {
                     margin-bottom: 5px;
                 }
+
             }
             
             &:hover{
                 transition: 0.2s ease-in;
                 transform: scale(1.1);
+                @include mobile {
+                    transition: none;
+                    transform: none;
+                    zoom: 110%;
+                }
             }
 
         }

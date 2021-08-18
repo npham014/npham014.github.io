@@ -2,7 +2,7 @@ import Navbar from "./components/Navbar/Navbar";
 import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
 import Testimonials from "./components/Testimonials/Testimonials";
-import Contact from "./components/Contact/Contact";
+import Description from "./components/Description/Description";
 import "./app.scss";
 function App() {
   return (
@@ -10,6 +10,7 @@ function App() {
       <Navbar/>
       <div className="sections">
         <About id="about"/>
+        <Description id="desc"/>
         <Projects id="projects"/>
         <Testimonials id="testimonials"/>
       </div>

@@ -2,7 +2,8 @@ import "./projects.scss";
 import ProjectItem from "../ProjectItem/ProjectItem.jsx"
 import React from "react"
 import { featured, webApp, mobile, etc } from "../../data";
-
+import {Link} from '@material-ui/core';
+ 
 export default function Projects() {
     const [selected, setSelected] = React.useState("1");
     const [page, setPage] = React.useState([]);
@@ -44,6 +45,8 @@ export default function Projects() {
                 break;
         }
     }, [selected])
+
+
     return (
         <div className="projects" id="projects">
             <h1>Projects</h1>
@@ -59,13 +62,13 @@ export default function Projects() {
             </ul>
             <div className="container">
                     {page.map((pg) => (
-                        <div className="item">
+                        <Link className="item" href={pg.link} target="_blank">
                             <img
                                 src={pg.img}
                                 alt="thumbnail of website"
                             />
-                                    <h3>{pg.title}</h3>
-                        </div>
+                            <h3>{pg.title}</h3>
+                        </Link>
                     ))};
             </div>
         </div>

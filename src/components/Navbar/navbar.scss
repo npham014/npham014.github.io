@@ -23,11 +23,18 @@
                 text-decoration: none;
                 color:inherit;
                 margin-right: 40px;
+                @include mobile {
+                    font-size: 20px;
+                    margin-right: 0px;
+                }
             }
             .itemContainer {
                 display:flex;
                 align-items: center;
                 margin-left: 30px;
+                @include mobile {
+                    display: none;
+                }
 
                 .icon {
                     font-size: 30px;
@@ -36,6 +43,10 @@
                 .liIcon {
                     color:#0077B5;
                     font-size: 30px;
+                }
+                .gitIcon {
+                    font-size: 30px;
+                    color: black;
                 }
 
             }

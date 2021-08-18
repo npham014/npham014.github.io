@@ -7,6 +7,7 @@ import Popover from '@material-ui/core/Popover';
 import Typography from '@material-ui/core/Typography';
 import {makeStyles} from "@material-ui/core/styles";
 import {Menu, MenuItem, Link} from '@material-ui/core';
+import GitHubIcon from '@material-ui/icons/GitHub';
 
 const useStyles = makeStyles((theme) => ({
     popover:{
@@ -108,6 +109,11 @@ export default function Navbar() {
                             <LinkedIn className="liIcon"/>
                         </IconButton>
                     </div>
+                    <div className="itemContainer">
+                        <IconButton href="https://github.com/npham014" target="_blank">
+                            <GitHubIcon className="gitIcon"/>
+                        </IconButton>
+                    </div>
                 </div>
                 
                 <div className="right">
@@ -130,6 +136,12 @@ export default function Navbar() {
                             </MenuItem>
                             <MenuItem
                                 component={Link}
+                                href="#desc"
+                            > 
+                                Description
+                            </MenuItem>
+                            <MenuItem
+                                component={Link}
                                 href="#projects"
                             > 
                                 Projects
@@ -139,12 +151,6 @@ export default function Navbar() {
                                 href="#testimonials"
                             > 
                                 Recommendations
-                            </MenuItem>
-                            <MenuItem
-                                component={Link}
-                                href="#contact"
-                            > 
-                                Contact
                             </MenuItem>
                         </Menu>
                         <MenuIcon className="icon"/>
