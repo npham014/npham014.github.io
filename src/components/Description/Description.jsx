@@ -1,7 +1,15 @@
 import React from 'react'
 import "./description.scss"
+import {Button} from '@material-ui/core'
 
 export default function Description() {
+    const handleDownload = () => {
+        const link = document.createElement("a");
+        link.download = "Resume.pdf"
+        link.href = "./assets/Resume.pdf"
+        link.click();
+    }
+
     return (
         <div className="description" id="desc">
             <h1>About Me</h1>
@@ -11,10 +19,23 @@ export default function Description() {
                 </div>
                 <div className="bottom">
                     <div className="botLeft">
-                        <h2> left side of me</h2>
+                        <h2>Technical Skills:</h2>
+                        <ul>
+                            <li>Javascript/Typescript</li>
+                            <li>HTML/CSS/SASS</li>
+                            <li>React, Redux, Material-UI</li>
+                            <li>C++</li>
+                            <li>Git</li>
+                            <li>Cloud Platforms: AWS, GCP/Firebase, Azure</li>
+                            <li>Databases: MongoDB, Firestore</li>
+                            <li>RESTful APIs</li>
+                            <li>SCRUM and Agile work-flow</li>
+                        </ul>
                     </div>
                     <div className="botRight">
-                        <h2> right side of me</h2>
+                        <h2>My Resume</h2>
+                        <h3>Want to see more details? Download my resume:</h3>
+                        <Button onClick={handleDownload} variant="contained" color="primary" className="button">Download</Button>
                     </div>
                 </div>
             </div>
