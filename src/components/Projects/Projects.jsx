@@ -69,7 +69,7 @@ export default function Projects() {
                             />
                             <h3>{pg.title}</h3>
                         </Link>
-                    ))};
+                    ))}
             </div>
         </div>
     )

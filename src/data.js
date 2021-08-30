@@ -1,67 +1,27 @@
 export const featured = [
     {
         id: 1,
-        title: "Belch",
+        title: "Belch: A Restaurant Review App",
         img: "https://i.imgur.com/XhhI1yj.png",
         link: "https://npham014-belch.netlify.app/"
-    },
-    {
-        id: 2,
-        title: "Cute Cat App",
-        img: "https://i.pinimg.com/736x/33/32/6d/33326dcddbf15c56d631e374b62338dc.jpg",
-        link: "https://www.google.com"
-    },
-    {
-        id: 3,
-        title: "Not a Cute Cat App",
-        img: "https://i.pinimg.com/736x/33/32/6d/33326dcddbf15c56d631e374b62338dc.jpg",
-        link: "https://www.google.com"
     },
 ];
 
 export const webApp = [
     {
         id: 1,
-        title: "Belch",
+        title: "Belch: A Restaurant Review App",
         img: "https://i.imgur.com/XhhI1yj.png",
         link: "https://npham014-belch.netlify.app/"
     },
 ];
 
 export const mobile = [
-    {
-        id: 1,
-        title: "Mobile App",
-        img: "https://i.pinimg.com/736x/33/32/6d/33326dcddbf15c56d631e374b62338dc.jpg",
-        link: "https://www.google.com"
-    },
-    {
-        id: 2,
-        title: "Cute Cat App",
-        img: "https://i.pinimg.com/736x/33/32/6d/33326dcddbf15c56d631e374b62338dc.jpg",
-        link: "https://www.google.com"
-    },
+
 ];
 
 export const etc = [
-    {
-        id: 1,
-        title: "Elite Tauren Chieftain App",
-        img: "https://i.pinimg.com/736x/33/32/6d/33326dcddbf15c56d631e374b62338dc.jpg",
-        link: "https://www.google.com"
-    },
-    {
-        id: 2,
-        title: "Cute Cat App",
-        img: "https://i.pinimg.com/736x/33/32/6d/33326dcddbf15c56d631e374b62338dc.jpg",
-        link: "https://www.google.com"
-    },
-    {
-        id: 3,
-        title: "Not a Cute Cat App",
-        img: "https://i.pinimg.com/736x/33/32/6d/33326dcddbf15c56d631e374b62338dc.jpg",
-        link: "https://www.google.com"
-    },
+
 ];
 
 export const rec = [

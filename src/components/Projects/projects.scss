@@ -17,7 +17,6 @@
         padding: 0;
         list-style: none;
         display:flex;
-
         @include mobile {
             flex-wrap: wrap;
             justify-content: center;
