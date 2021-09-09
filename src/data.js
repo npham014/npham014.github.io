@@ -5,6 +5,12 @@ export const featured = [
         img: "https://i.imgur.com/XhhI1yj.png",
         link: "https://npham014-belch.netlify.app/"
     },
+    {
+        id: 2,
+        title: "DApp Pet Shop",
+        img: "https://i.imgur.com/Q8dtlh2.png",
+        link: "https://npham014.github.io/pet-shop/"
+    },
 ];
 
 export const webApp = [
@@ -13,6 +19,12 @@ export const webApp = [
         title: "Belch: A Restaurant Review App",
         img: "https://i.imgur.com/XhhI1yj.png",
         link: "https://npham014-belch.netlify.app/"
+    },
+    {
+        id: 2,
+        title: "DApp Pet Shop",
+        img: "https://i.imgur.com/Q8dtlh2.png",
+        link: "https://npham014.github.io/pet-shop/"
     },
 ];
 
