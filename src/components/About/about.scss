@@ -7,6 +7,9 @@
         flex-direction: column;
         align-items: center;
     }
+    @include smallScreen {
+        overflow: hidden;
+    }
     .left{
         flex: 0.5;
         overflow: hidden;

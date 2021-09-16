@@ -6,13 +6,20 @@
     flex-direction: column;
     background-color: whitesmoke;
     padding-top: 50px;
+    @include smallScreen {
+        overflow: hidden;
+        padding-top: 25px;
+    }
+
     h1 {
         font-size: 50px;
         display: flex;
         justify-content: center;
+        @include smallScreen {
+            overflow: hidden;
+        }
     }
     .container {
-
         .top {
             display:flex;
             flex-direction: column;
@@ -22,11 +29,18 @@
             h2 {
                 margin: 50px 150px;
             }
+            @include smallScreen {
+                overflow: hidden;
+                margin: 0px 150px;
+            }
         }
         .bottom {
             display:flex;
             //flex-direction: column;
             justify-content: space-evenly;
+            @include smallScreen {
+                overflow: hidden;
+            }
 
             .botLeft {
                 display:flex;
