@@ -5,8 +5,8 @@ import {Button} from '@material-ui/core'
 export default function Description() {
     const handleDownload = () => {
         const link = document.createElement("a");
-        link.download = "Resume.pdf"
-        link.href = "./assets/Resume.pdf"
+        link.download = "Resume_11422.pdf"
+        link.href = "./assets/Resume_11422.pdf"
         link.click();
     }
 
